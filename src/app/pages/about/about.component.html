@@ -1,0 +1,11 @@
+<div class="card mt-4" *ngFor="let card of cards">
+  <div class="card-header">{{ card.title }}</div>
+  <div class="card-body">
+    {{ card.content }}
+    <ul  *ngIf="card.items" class="mb-0">
+      <li *ngFor="let item of card.items">
+        <span [innerHtml]=item></span>
+      </li>
+    </ul>
+  </div>
+</div>
