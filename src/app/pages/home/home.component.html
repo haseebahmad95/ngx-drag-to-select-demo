@@ -1,6 +1,6 @@
 <dts-select-container [(selectedItems)]="selected">
 	<div class="row">
-		<div class="col-4" *ngFor="let document of documents; trackBy: document.id;">
+		<div class="col-4" *ngFor="let document of documents">
 			<div class="card mt-3" [dtsSelectItem]="document">
 				<div class="card-body">
 					<h1 class="text-center text-primary">
